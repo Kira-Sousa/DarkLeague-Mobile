@@ -5,13 +5,14 @@
 1. [Curso](#curso)
 2. [Elementos do Grupo](#elementos-do-grupo)
 3. [Professores](#professores)
-5. [Objetivos e Motivação](#objetivos-e-motiva%C3%A7%C3%A3o)
-    - [Motivação](#motiva%C3%A7%C3%A3o)
+5. [Objetivos e Motivação](#objetivos-e-motivação)
+    - [Motivação](#motivação)
     - [Objetivos](#objetivos)
-6. [Público-Alvo](#p%C3%BAblico-alvo)
+6. [Público-Alvo](#público-alvo)
 7. [Aplicações Semelhantes](#aplicações-semelhantes)
 8. [Enquadramento nas Unidades Curriculares](#enquadramento-nas-unidades-curriculares)
-9. [Requisitos Técnicos](#requisitos-t%C3%A9cnicos)
+9. [Arquitetura da Solução](#arquitetura-da-solução)
+10. [Requisitos Técnicos](#requisitos-técnicos)
 17. [Melhorias para a Apresentação e Futuras](#melhorias-para-a-apresentação-e-futuras)
 17. [Personas](#personas)
 18. [Bibliografia](#bibliografia)
@@ -77,6 +78,56 @@ Embora estes websites ofereçam funcionalidades como **torneios, pesquisa e comp
 # Enquadramento nas Unidades Curriculares
 
 Este projeto apenas se encontra em avaliação para a unidade curricular de Projeto de dispositivos móveis, tendo sido visualizado para cumprir uma visão de aplicação funcional e completa. Tendo por si componentes de servidor java, bases de dados em sql e desenvolvimento em kotin para aplicação mobile.
+
+# **Arquitetura da Solução**
+A plataforma DarkLeague adota uma arquitetura de cliente-servidor distribuída, composta por três camadas principais:
+
+Front-end (Mobile): Desenvolvido em Kotlin com Jetpack Compose, utilizando o Android Studio como IDE. Esta camada é responsável pela interface do utilizador, gestão de estado e consumo dos serviços REST.
+
+Back-end (API Server): Desenvolvido em Java com a framework Spring Boot. Implementa a lógica de negócio, autenticação via JWT e disponibiliza os endpoints necessários para a aplicação mobile através de uma arquitetura RESTful.
+
+Base de Dados: Sistema relacional utilizando MySQL para a persistência de dados de coleções, utilizadores e torneios.
+
+### Versão Atualizada dos Casos de Utilização
+O sistema foca-se em três pilares principais:
+
+Core - Gestão de Coleção: O utilizador pode pesquisar cartas, visualizar detalhes técnicos e adicioná-las aos seus "Binders" (pastas digitais) de favoritos.
+
+Gestão de Torneios: Permitir que organizadores criem eventos e jogadores se inscrevam, com acompanhamento de progresso em tempo real.
+
+Sistema de Arbitragem: Funcionalidade que permite a um perfil de "Árbitro" validar resultados de partidas entre jogadores.
+
+### Diagrama de Classes (Conceptual)
+As principais entidades identificadas no código e lógica do projeto são:
+
+User: Gere perfis, tipos favoritos e credenciais (integração com JWT).
+
+Card: Entidade que armazena dados das cartas (nome, tipo, preço, raridade).
+
+Binder: Coleção personalizada que agrupa instâncias de Card associadas a um User.
+
+Tournament/Match: Entidades responsáveis pela lógica competitiva e histórico de confrontos.
+
+### Dicionário de Dados (Modelo ER)
+A base de dados MySQL estrutura-se em tabelas como:
+
+utilizadores: (id, username, password_hash, tipo_favorito).
+
+cartas: (id, nome, raridade, preço_atual, curiosidades).
+
+binders: (id, user_id, nome_binder).
+
+partidas: (id, jogador1_id, jogador2_id, arbitro_id, resultado).
+
+### Guia de Dados (BD Report)
+Para efeitos de simulação, o projeto utiliza dados exemplo (não reais) que incluem um catálogo de cartas Pokémon, utilizadores de teste com perfis de colecionador e árbitro, e um histórico de torneios fictícios para validar a interface de "Histórico de Partidas".
+
+### Links de Documentação Externa
+Documentação REST: [Link para Documentação Swagger/Postman ou formato Bocoup] (Obrigatório seguir o formato do briefing).
+
+Manual do Utilizador: [Link para Manual Figma/PDF com Print Screens].
+
+Protótipo Figma: ([Mockups do Figma](https://www.figma.com/design/JCiptucMSAQVBkm19PdeUN/DarkLeague-Mobile?node-id=0-1&t=0JJU6FUeXvWh2pFc-1)).
 
 ---
 # Requisitos Técnicos
