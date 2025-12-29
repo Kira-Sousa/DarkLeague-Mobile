@@ -155,11 +155,11 @@ Protótipo Figma: ([Mockups do Figma](https://www.figma.com/design/JCiptucMSAQVB
     - **JWT (JSON Web Token)** – Utilizado para autenticação dos utilizadores, assegurando sessões seguras.
  ---
  # Melhorias para a Apresentação e Futuras
- - Infelizmente não conseguimos terminar o projeto por completo, ficou em falta apenas a parte dos "Historico de Partidas", que pretendemos deixar preparado para a apresentação, de resto está tudo de acordo com os objetivos iniciais do trabalho.
+ - Infelizmente não conseguimos terminar o projeto por completo, ficou em falta a parte das partidas entre jogadores.
 
- - No futuro, desejamos implementar mais funcionalidades, como por exemplo, quando o utilizador selecionar o seu tipo favortio, o tema do website estar a condizer com o tipo favorito do utilizador.
+ - No futuro, desejamos implementar mais funcionalidades, como por exemplo, quando o utilizador selecionar o seu tipo favortio, o tema da aplicação estar a condizer com o tipo favorito do utilizador juntamente com a parte de torneios.
 
- - Em suma, estamos satisfeitos com o projeto em geral.Houve diversas alterações na interface ao longo do projeto, mas conseguimos no final chegar a um consenso.
+ - Em suma, estamos satisfeitos com o projeto em geral. Houve diversas alterações na interface ao longo do projeto, mas conseguimos no final chegar a um consenso.
  ---
  # Features previstas no início do projeto versus features efetivamente implementadas
  - Criação dos Binders para guardar as nossas cartas favoritas, feito.
@@ -169,8 +169,6 @@ Protótipo Figma: ([Mockups do Figma](https://www.figma.com/design/JCiptucMSAQVB
  - Partidas entre jogadores, conseguimos implementar as partidas entre os jogadores e ainda adicionalmente um arbitro.
 
  - Temas personalizados dependendo do tipo favorito do user, infelizmente não conseguimos alcançar esta parte visual.
-
- - Em suma, todas as features previstas no início do projeto foram efetivamente implementadas.
 
  ---
 # Personas
