@@ -123,7 +123,7 @@ partidas: (id, jogador1_id, jogador2_id, arbitro_id, resultado).
 Para efeitos de simulação, o projeto utiliza dados exemplo (não reais) que incluem um catálogo de cartas Pokémon, utilizadores de teste com perfis de colecionador e árbitro, e um histórico de torneios fictícios para validar a interface de "Histórico de Partidas".
 
 ### Links de Documentação Externa
-Documentação REST: [Link para Documentação].
+Documentação REST: ([Link para Documentação](READMEAPI.md)).
 
 
 Protótipo Figma: ([Mockups do Figma](https://www.figma.com/design/JCiptucMSAQVBkm19PdeUN/DarkLeague-Mobile?node-id=0-1&t=0JJU6FUeXvWh2pFc-1)).
