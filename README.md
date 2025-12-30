@@ -123,9 +123,8 @@ partidas: (id, jogador1_id, jogador2_id, arbitro_id, resultado).
 Para efeitos de simulação, o projeto utiliza dados exemplo (não reais) que incluem um catálogo de cartas Pokémon, utilizadores de teste com perfis de colecionador e árbitro, e um histórico de torneios fictícios para validar a interface de "Histórico de Partidas".
 
 ### Links de Documentação Externa
-Documentação REST: [Link para Documentação Swagger/Postman ou formato Bocoup] (Obrigatório seguir o formato do briefing).
+Documentação REST: [Link para Documentação].
 
-Manual do Utilizador: [Link para Manual Figma/PDF com Print Screens].
 
 Protótipo Figma: ([Mockups do Figma](https://www.figma.com/design/JCiptucMSAQVBkm19PdeUN/DarkLeague-Mobile?node-id=0-1&t=0JJU6FUeXvWh2pFc-1)).
 
@@ -140,7 +139,7 @@ Protótipo Figma: ([Mockups do Figma](https://www.figma.com/design/JCiptucMSAQVB
     
 - **Plataforma de Desenvolvimento:**
     
-    - **Visual Studio Code** – Editor utilizado para a construção e otimização do **front-end** da plataforma.
+    - **Android Studio** – Editor utilizado para a construção e otimização do **front-end** da plataforma.
     
 - **Base de Dados:**
     
@@ -166,7 +165,7 @@ Protótipo Figma: ([Mockups do Figma](https://www.figma.com/design/JCiptucMSAQVB
 
  - Conseguir favoritar as cartas que desejamos e guarda-las nos nossos binders.
 
- - Partidas entre jogadores, conseguimos implementar as partidas entre os jogadores e ainda adicionalmente um arbitro.
+ - Partidas entre jogadores, planeamos implementar as partidas entre os jogadores e ainda adicionalmente um arbitro.
 
  - Temas personalizados dependendo do tipo favorito do user, infelizmente não conseguimos alcançar esta parte visual.
 
@@ -216,7 +215,7 @@ Protótipo Figma: ([Mockups do Figma](https://www.figma.com/design/JCiptucMSAQVB
 - [Java - Oracle](https://www.java.com/)
 - [Spring Boot - VMware Tanzu](https://spring.io)
 - [MySQL - Oracle](https://www.mysql.com/)
-- [Pokémon TCG Online](https://tcg.pokemon.com)
-- [Limitless TCG](https://limitlesstcg.com)
+- [Pokémon TCG Pocket](https://tcgpocket.pokemon.com/en-us/)
+- [Pokéllector](https://www.pokellector.com/)
 - [TCGPlayer](https://www.tcgplayer.com)
-- [Pokémon Price](https://pokemonprice.com)
+- [PokeMoney]([https://pokemonprice.com](https://play.google.com/store/apps/details?id=com.urbandroid.pokemoney&hl=pt_PT))
